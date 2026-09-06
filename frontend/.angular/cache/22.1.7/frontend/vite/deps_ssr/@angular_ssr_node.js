@@ -1,4 +1,4 @@
-import { C as validateUrl, S as parseForwardedHeader, _ as renderApplication, b as isProxyHeaderAllowed, g as SERVER_CONTEXT, r as InlineCriticalCssProcessor, t as AngularAppEngine, v as renderModule, x as normalizeTrustProxyHeaders, y as getFirstHeaderValue } from "./ssr-55q8YSt0.js";
+import { C as validateUrl, S as parseForwardedHeader, _ as renderApplication, b as isProxyHeaderAllowed, g as SERVER_CONTEXT, r as InlineCriticalCssProcessor, t as AngularAppEngine, v as renderModule, x as normalizeTrustProxyHeaders, y as getFirstHeaderValue } from "./ssr-BCwo8y69.js";
 import * as fs from "node:fs";
 import { dirname, isAbsolute, join, relative, resolve } from "node:path";
 import { URL as URL$1, fileURLToPath } from "node:url";
