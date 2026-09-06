@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "components": {
+    "button": {
+      "tier": "free",
+      "installedAt": "2026-09-06T01:41:56.643Z",
+      "files": {
+        "base-button.directive.ts": "d9528b1025afc760f8b31435681ad05ed109b54e98d8f909305ec0837dad13a2",
+        "base-icon-button.directive.ts": "131c0d354cbe50b2b3cc607a1ecdcadf6f37e30c7c5d00c3feb3df3554df4289",
+        "base-icon-stroked-button.directive.ts": "8ffeb8d534664388efcd42adb17a19678b5d15f63a1fdab3a1a25284d437a17e",
+        "base-link.directive.ts": "5ba14aa9e08ee29a77e5e70c1e35daa8ef7654463e15511777d480bdb779ecb3",
+        "base-stroked-button.directive.ts": "d2a333dba878e54644cdcab6f6303e79fed514c09c5633dc9cdc2e39e43080f9"
+      }
+    },
+    "types": {
+      "tier": "free",
+      "installedAt": "2026-09-06T01:41:56.919Z",
+      "files": {
+        "index.ts": "554de5062119e48ae90eee5474001ff27c2cb62bb62a6ae80748b3b7fef9721f"
+      }
+    },
+    "scroll-container": {
+      "tier": "free",
+      "installedAt": "2026-09-06T01:41:57.204Z",
+      "files": {
+        "scroll-container.ts": "a9ec07180af1d46462a7c4be36278a52cabc2beb6a9f86fa8943977beda966b5"
+      }
+    },
+    "card": {
+      "tier": "free",
+      "installedAt": "2026-09-06T01:42:00.157Z",
+      "files": {
+        "card-body/card-body.component.html": "fcae0ac6b68ea3433f016d9a57901c9a3b4766021523f8af625ccf6b6a4270f8",
+        "card-body/card-body.component.ts": "b817c1caa60a26634a1230a58f243353b73ce1c0aaa247d277638d29af216609",
+        "card-footer/card-footer.component.html": "fcae0ac6b68ea3433f016d9a57901c9a3b4766021523f8af625ccf6b6a4270f8",
+        "card-footer/card-footer.component.ts": "af36a86e4c70052706951545cec5246fcfc59f02b7fbeda9dae4c3bb0eb1c6a9",
+        "card-header/card-header.component.html": "fcae0ac6b68ea3433f016d9a57901c9a3b4766021523f8af625ccf6b6a4270f8",
+        "card-header/card-header.component.ts": "742418be7711635e5b7310a2f8678cec4d563d2c930c8cea291f99b0b55d7894",
+        "card.component.html": "05a8cae6c8a23632c23dc81758f48af407404dc29b170d1d45d66e65dc281c93",
+        "card.component.ts": "7fcfa9579b7c52caf6661c2e407ae6274f93507c22004ade70c818a6bba4fa44"
+      }
+    },
+    "tw-merge": {
+      "tier": "free",
+      "installedAt": "2026-09-06T01:42:00.431Z",
+      "files": {
+        "tw-merge.ts": "fb7b0ee3334d8efeabd48b4c66888dcf4d116dd161f1b74d89ee06a889638700"
+      }
+    }
+  }
+}
