@@ -1,2 +1,12 @@
+@import "https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap";
 @import "tailwindcss";
+
 @source "./src/**/*.{html,ts}";
+
+@theme {
+  /* Opción A: Reemplaza la fuente 'font-sans' (predeterminada de la app) */
+  --font-sans: 'Inconsolata', monospace;
+
+  /* Opción B: O la defines como 'font-mono' si solo quieres usarla con la clase font-mono */
+  --font-mono: 'Inconsolata', monospace;
+}
