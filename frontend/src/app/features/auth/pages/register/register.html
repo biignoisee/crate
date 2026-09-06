@@ -1,1 +1,27 @@
-<p>register works!</p>
+<base-card class="bg-[#12182b] dark:bg-[#12182b] border-white/[0.06] dark:border-white/[0.06] w-full">
+  <form (ngSubmit)="onSubmit()">
+    <base-card-header class="flex-col items-center text-center gap-1">
+      <h1 class="text-xl font-semibold text-white">Create your account</h1>
+      <p class="text-sm text-[#5c6478]">Start explore your Crate</p>
+    </base-card-header>
+
+    <base-card-body class="space-y-4">
+      <input [(ngModel)]="name" name="name" type="text" placeholder="Name"
+        class="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
+      <input [(ngModel)]="email" name="email" type="email" placeholder="Email"
+        class="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
+      <input [(ngModel)]="password" name="password" type="password" placeholder="Password"
+        class="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
+    </base-card-body>
+
+    <base-card-footer class="flex flex-col gap-4">
+      <button type="submit"
+        class="w-full bg-[#3b6fd4] hover:bg-[#4a7ce0] text-white text-sm font-medium rounded-xl py-3 transition-colors">
+        Create account
+      </button>
+      <p class="text-center text-sm text-[#5c6478]">
+        Already have an account? <a routerLink="/login" class="text-[#3b6fd4] hover:underline">Log in</a>
+      </p>
+    </base-card-footer>
+  </form>
+</base-card>

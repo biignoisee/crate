@@ -46,6 +46,62 @@
       "files": {
         "tw-merge.ts": "fb7b0ee3334d8efeabd48b4c66888dcf4d116dd161f1b74d89ee06a889638700"
       }
+    },
+    "chat": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:29.667Z",
+      "files": {
+        "chat-message.component.html": "1cd6f0980ad323e544ce78242f3a58b4a2841c5f1e9b2ed8a5f8f1d14b00055e",
+        "chat-message.component.ts": "d54f1081186554a899ec23c115e553444253c84539dc113572e10b1b1fa90aef",
+        "chat-prompt.component.html": "16d63ded9606ec7d7874cbf387f8a37a9ac23cc78ea6ef5636d627163cd4443e",
+        "chat-prompt.component.ts": "068837dceeaec7181e137fb5685b4ea4b1c4f5b6dce36f65b8a35ddefb9701f7",
+        "chat.component.html": "84dade46d64953a05752836818b73494e9fb6c3b64b2bf7c2f7b60ff3f6e6586",
+        "chat.component.ts": "c229182b0d29dcbb5e9e00d7f82946f56bc8999adbfbbd1a50b0450e61a22e03"
+      }
+    },
+    "avatar": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:29.987Z",
+      "files": {
+        "avatar.component.html": "130228ac48deb84e6d47bd9564030304fad7d17fad4b4daebb7d21ff272ba36f",
+        "avatar.component.ts": "3a1a90a74c941843de7ba4acd59ffe59426bec1825c3b32a358782610c0956ae"
+      }
+    },
+    "badge": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:30.293Z",
+      "files": {
+        "badge.component.html": "c9ccf5b4058f33a17c564445adbc58c7624b876ec0e8b0520718cc01721f3f40",
+        "badge.component.ts": "9c37e8f897ec155027fa9a5d7db0054ac21844c7bd3443b7adf0978397be5a0b",
+        "base-badge-addon.directive.ts": "268ef5d62b6aa5a51c7962a73d3ba95ff68a67f6aad12b152b8fa9df70845c82",
+        "base-badge-icon.directive.ts": "20391cdea8d8f79b439168694b937804a0d6894cf5f02c8695d46fca03780ae2"
+      }
+    },
+    "empty-state": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:30.607Z",
+      "files": {
+        "empty-state.component.html": "abe5ccff38e8e518055e6b71fe5bf5947d86e8b8f736324dee49131439be11dd",
+        "empty-state.component.ts": "55068c5b225b6c0ab945a8c4151a811e3f0117fed507069a0bab20d15097a022"
+      }
+    },
+    "icon": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:30.931Z",
+      "files": {
+        "icon.component.html": "ac752d1f07e587128a344c66f6e14d87d526ba93fb99e06ad6543e0c8e7afc29",
+        "icon.component.ts": "e85349619821a9988751692e1d473bd80002eaf9d8538ba5a3e911ae4a9f4f35"
+      }
+    },
+    "spinner": {
+      "tier": "free",
+      "installedAt": "2026-09-06T19:58:31.234Z",
+      "files": {
+        "spinner-wrapper/spinner-wrapper.component.html": "339000143c5a445e4c4eca262bfe1f63639c69da41c31bfcb669d068abe25f3a",
+        "spinner-wrapper/spinner-wrapper.component.ts": "bb2f26fbc4edb6e1ca7811d8f186b9c90c3e521f131ec636fb8cc3c602f9c1bb",
+        "spinner.component.html": "f47bd499565ba2cc1554af3ac597eaaff76e4d1dc1ef0429899473103bbc0ea3",
+        "spinner.component.ts": "79a1fb4104cada60a29ea8ba1ba7853e5726f9cd107fb7cb8c1e1a8b7bf1e690"
+      }
     }
   }
 }

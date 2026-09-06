@@ -4,30 +4,10 @@
     <p class="text-sm text-[#5c6478]">Ask about artists, moods, or what to play next</p>
   </header>
 
-  <div class="flex-1 overflow-y-auto px-8 py-6 space-y-4">
-    @for (msg of messages(); track $index) {
-    <div class="flex" [class.justify-end]="msg.role === 'user'">
-      <div class="max-w-[70%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed" [class]="msg.role === 'user'
-            ? 'bg-[#3b6fd4] text-white'
-            : 'bg-[#12182b] border border-white/[0.06] text-[#e4e7ee]'">
-        {{ msg.content }}
-      </div>
-    </div>
-    }
-  </div>
-
-  <div class="px-8 py-5 border-t border-white/[0.06]">
-    <form (ngSubmit)="send()" class="flex items-center gap-3">
-      <input [(ngModel)]="draft" name="draft" type="text" placeholder="Message Crate..."
-        class="flex-1 bg-[#12182b] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60 transition-colors" />
-      <button type="submit"
-        class="h-11 w-11 shrink-0 rounded-xl bg-[#3b6fd4] hover:bg-[#4a7ce0] flex items-center justify-center transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-white" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m22 2-7 20-4-9-9-4z" />
-          <path d="M22 2 11 13" />
-        </svg>
-      </button>
-    </form>
+  <div class="flex-1 min-h-0 px-8 py-6">
+    <base-chat class="h-full" [messages]="messages()" [streaming]="streaming()"
+      placeholder="What have you been listening to recently?" emptyTitle="What have you been listening to recently?"
+      emptyDescription="Tell me a track, artist, or mood and I'll take it from there." (send)="onSend($event)"
+      (stop)="stop()" />
   </div>
 </div>

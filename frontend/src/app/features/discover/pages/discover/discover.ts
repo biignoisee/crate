@@ -1,36 +1,42 @@
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-interface ChatMessage {
-  role: 'user' | 'assistant';
-  content: string;
-}
+import { ChatComponent } from '@components/chat/chat.component';
+import type { ChatMessage } from '@components/chat/chat.component';
 
 @Component({
   selector: 'app-discover',
-  imports: [FormsModule],
+  imports: [ChatComponent],
   templateUrl: './discover.html',
   styleUrl: './discover.css',
 })
 export default class Discover {
-  readonly draft = signal('');
   readonly messages = signal<ChatMessage[]>([
-    { role: 'assistant', content: 'What have you been listening to recently?' },
+    { id: crypto.randomUUID(), role: 'assistant', content: 'What have you been listening to recently?' },
   ]);
+  readonly streaming = signal(false);
 
-  send() {
-    const text = this.draft().trim();
-    if (!text) return;
+  onSend(text: string) {
+    this.messages.update((list) => [
+      ...list,
+      { id: crypto.randomUUID(), role: 'user', content: text },
+    ]);
 
-    this.messages.update((msgs) => [...msgs, { role: 'user', content: text }]);
-    this.draft.set('');
+    this.streaming.set(true);
 
-    // Placeholder response — wire up the RAG call here later
+    // Placeholder — wire up the real RAG/model call here later
     setTimeout(() => {
-      this.messages.update((msgs) => [
-        ...msgs,
-        { role: 'assistant', content: "Got it — I'll use that to shape your recommendations soon." },
+      this.messages.update((list) => [
+        ...list,
+        {
+          id: crypto.randomUUID(),
+          role: 'assistant',
+          content: "Got it — I'll use that to shape your recommendations soon.",
+        },
       ]);
-    }, 400);
+      this.streaming.set(false);
+    }, 600);
+  }
+
+  stop() {
+    this.streaming.set(false);
   }
 }

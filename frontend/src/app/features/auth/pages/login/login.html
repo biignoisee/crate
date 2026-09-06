@@ -1,17 +1,25 @@
-<div class="text-center mb-8">
-  <h1 class="text-xl font-semibold text-white">Log in to Crate</h1>
-  <p class="text-sm text-[#5c6478] mt-1">Pick up where you left off</p>
-</div>
+<base-card class="bg-[#12182b] dark:bg-[#12182b] border-white/[0.06] dark:border-white/[0.06] w-full">
+  <form (ngSubmit)="onSubmit()">
+    <base-card-header class="flex-col items-center text-center gap-2">
+      <h1 class="text-xl font-semibold text-white">Log in to Crate</h1>
+      <p class="text-sm text-[#5c6478]">Pick up where you left off</p>
+    </base-card-header>
 
-<form class="space-y-4">
-  <input type="email" placeholder="Email"
-    class="w-full bg-[#12182b] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
-  <input type="password" placeholder="Password"
-    class="w-full bg-[#12182b] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
-  <button type="submit"
-    class="w-full bg-[#3b6fd4] hover:bg-[#4a7ce0] text-white text-sm font-medium rounded-xl py-3 transition-colors">Continue</button>
-</form>
+    <base-card-body class="space-y-4">
+      <input [(ngModel)]="email" name="email" type="email" placeholder="Email"
+        class="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
+      <input [(ngModel)]="password" name="password" type="password" placeholder="Password"
+        class="w-full bg-white/[0.03] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white placeholder:text-[#5c6478] outline-none focus:border-[#3b6fd4]/60" />
+    </base-card-body>
 
-<p class="text-center text-sm text-[#5c6478] mt-6">
-  Don't have an account? <a routerLink="/register" class="text-[#3b6fd4] hover:underline">Sign up</a>
-</p>
+    <base-card-footer class="flex flex-col gap-4">
+      <button type="submit"
+        class="w-full bg-[#3b6fd4] hover:bg-[#4a7ce0] text-white text-sm font-medium rounded-xl py-3 transition-colors">
+        Continue
+      </button>
+      <p class="text-center text-sm text-[#5c6478]">
+        Don't have an account? <a routerLink="/register" class="text-[#3b6fd4] hover:underline">Sign up</a>
+      </p>
+    </base-card-footer>
+  </form>
+</base-card>

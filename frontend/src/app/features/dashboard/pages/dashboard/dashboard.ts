@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { CardComponent } from '@components/card/card.component';
+import { CardBodyComponent } from '@components/card/card-body/card-body.component';
+import { CardHeaderComponent } from '@components/card/card-header/card-header.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [CardComponent, CardBodyComponent, CardHeaderComponent],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
